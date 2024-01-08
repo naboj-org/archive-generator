@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{siunitx}
+\sisetup{per-mode = symbol} % show m/s instead of ms^-1
+\sisetup{output-decimal-marker = {,}}
+\DeclareSIUnit\liter{l} % small L in litres
+\DeclareSIUnit\cal{cal} % calories unit
+\DeclareSIUnit\oz{oz} % ounce unit
+
+% \usepackage{scrextend}
+% \changefontsizes{14pt}
+
+% packages
+\usepackage{amsmath}    % most of math symbols
+\usepackage{amsfonts}   % math fonts \mathbb
+\usepackage{eurosym}    % € symbol
+\usepackage{gensymb}    % generic symbols (\degree, \micro...)
+\usepackage{mathtools}  % utilities for math mode
+\usepackage{graphicx}   % images
+\usepackage{microtype}  % better justification
+\usepackage[inline]{enumitem}   % better lists
+\usepackage{tikz}
+\usepackage{array}      % better tables
+\usepackage{xcolor}     % colors
+\usepackage{colortbl}   % colors in tables
+\usepackage{svg}        % importing svg figures
+
+\setlength{\parindent}{0cm}     % we don't want paragraphs to be indented
+
+% environments
+\newenvironment{note}{\par\vspace{2pt}\itshape}{}
+
+\begin{document}
+\strut{}${{ .Equation }}$
+\end{document}
