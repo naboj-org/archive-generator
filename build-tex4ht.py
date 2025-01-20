@@ -20,7 +20,7 @@ for directory in input_dir.glob("*"):
 
     template_file = (template / lang).with_suffix(".tex")
     if not template_file.exists():
-        print("Could not find template {template_file}.", file=sys.stderr)
+        print(f"Could not find template {template_file}.", file=sys.stderr)
         exit(1)
 
     template_real = template_file.readlink().with_suffix("").name
